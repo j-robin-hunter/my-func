@@ -1,0 +1,13 @@
+# $schema: https://raw.githubusercontent.com/knative/func/refs/tags/v0.36.0/schema/func_yaml-schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/knative/func/refs/tags/v0.36.0/schema/func_yaml-schema.json
+specVersion: 0.36.0
+name: my-func
+runtime: go
+registry: docker.io/robinhunter
+namespace: default
+created: 2025-05-11T16:21:37.757740626+01:00
+build:
+  builder: pack
+deploy:
+  namespace: default
+  image: index.docker.io/robinhunter/my-func@sha256:eeea44cf3017636918607615cd1f5c5702c0dd3619b2e4cfe9ada425887ada79
