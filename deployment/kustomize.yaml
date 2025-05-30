@@ -1,2 +1,8 @@
 resources:
   - namespace.yaml
+  - psql-pv.yaml
+  - psql-claim.yaml
+  - postgres-config.yaml
+  - ps-deployment.yaml
+  - ps-service.yaml
+namespace: example

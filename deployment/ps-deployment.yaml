@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: postgres
+  namespace: example
 spec:
   replicas: 1
   selector:
@@ -13,7 +14,7 @@ spec:
         app: postgres
     spec:
       containers:
-        - name: postgres
+        - name: example
           image: 'postgres:17'
           imagePullPolicy: IfNotPresent
           ports:
