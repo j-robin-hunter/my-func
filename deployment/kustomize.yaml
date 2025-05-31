@@ -5,4 +5,8 @@ resources:
   - postgres-config.yaml
   - ps-deployment.yaml
   - ps-service.yaml
+  - pgadmin-secret.yaml
+  - pgadmin-configmap.yaml
+  - pgadmin-deployment.yaml
+  - pgadmin-service.yaml
 namespace: example
